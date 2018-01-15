@@ -1,0 +1,6 @@
+<div>
+  <ul>
+    <li *ngFor="let todo of todos" (click)="viewTodo(todo.id)">{{todo.title}} </li>
+  </ul>
+</div>
+<button (click)="newTodo()">Add Todo</button>

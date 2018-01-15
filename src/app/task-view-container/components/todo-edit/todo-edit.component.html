@@ -1,0 +1,18 @@
+<div class="TodoEdit" >
+  <form *ngIf="todo" (ngSubmit)="save()">
+    <h3>Edit Task</h3>
+    <div>
+      <label for="title">Title</label>
+      <input name="title" [(ngModel)]="todo.title"/>
+    </div>
+    <div>
+      <label for="text">Description</label>
+      <input name="text" [(ngModel)]="todo.text"/>
+    </div>
+    <div>
+      <label for="status">Status</label>
+      <input name="status" [(ngModel)]="todo.status" />
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>

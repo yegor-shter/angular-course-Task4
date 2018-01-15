@@ -1,0 +1,15 @@
+<div>
+  <form   (ngSubmit)="addUser()">
+    <h3>Please register</h3>
+    <div>
+      <label>Name</label>
+      <input name="name" type="text" [ngModel]="user?.name" (ngModel)="user.name = $event" />
+    </div>
+    <div>
+      <label>Password</label>
+      <input name="password" type="password" [ngModel]="user?.pass" (ngModel)="user.pass = $event" />
+    </div>
+    <button class="submit">register</button>
+  </form>
+</div>
+
